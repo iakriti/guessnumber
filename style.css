@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Architects Daughter', cursive;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    background: url('714548.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    border: 2.5px solid white;
+    border-radius: 3rem;
+    height: 4rem;
+    width: 33rem;
+    background: black;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: -10rem;
+    margin-bottom: 2rem;
+}
+.icon{
+    font-size: 2rem;
+    margin: 10px;
+    animation:rotate 5s infinite linear;
+}
+@keyframes rotate {
+    0%{
+        color: blue;
+        transform: rotate(0deg);
+    }
+    25%{
+        color: purple;
+        transform: rotate(90deg);
+    }
+    50%{
+        color: yellow;
+        transform: rotate(180deg);
+    }
+    75%{
+        color: red;
+        transform: rotate(270deg);
+    }
+    100%{
+        color: slateblue;
+        transform: rotate(360deg);
+    }
+}
+.level{  
+    
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    width: 20rem;
+}
+.button{
+    font-size: 2rem;
+    height: 7rem;
+    margin: 3px;
+    border-radius: 20px;
+}
+.button:hover{
+    cursor: pointer;
+}
+.easy{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    /* background-color:greenyellow; */
+}
+.medium{
+    background-color: rgba(255, 255, 255, .15);  
+ backdrop-filter: blur(5px);
+    /* background-color: yellow; */
+}
+.hard{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    /* background-color: red; */
+}
+#screen{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    display: none;
+    height: 20rem;
+    width: 40rem;
+    /* border: 2px solid white; */
+}
+.head{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    width: 35rem;
+    margin: auto;
+    margin-top: 10px;
+    /* background-color: white; */
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+#guess{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 20rem;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    height: 2rem;
+    text-align: center;
+}
+#sub{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 1.5rem;
+    width: 6rem;
+    font-size: 1rem;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+.hint{
+    /* background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px); */
+    display: block;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    width:30rem;
+    /* background-color: white; */
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+#score{
+    /* background: white; */
+    /* border: 2px solid black; */
+    font-weight: bolder;
+    font-size: 1.5rem;
+    height: 2rem;
+    width: 20rem;
+    position: relative;
+    text-align: center;
+    top:4rem;
+    left: 19rem;
+}
+#hscoreee{
+    display: none;
+    border:2px solid black;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 0.2rem;
+    font-size: 1.75rem;
+    margin-top: 3rem;
+    z-index: 1;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    /* background-color: floralwhite; */
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+}
+/* @media screen and (max-width:1110px) {
+    .background{
+        
+    }
+} */

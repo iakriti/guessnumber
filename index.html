@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>GuessTheNumber</title>
+</head>
+<body>
+    <div class="background">
+        <div id="hscoreee">  
+            <h3 id="highhh">Highscore:0</h3>
+        </div>
+        <h1 class="heading"><i class="fas fa-snowflake icon"></i>Guess The Number<i class="fas fa-snowflake icon"></i></h1>
+        <div class="level" id="level">
+            <button class="button easy" id="easy">Easy</button>
+            <button class="button medium" id="medium">Medium</button>
+            <button class="button hard" id="hard">Hard</button>
+        </div>
+        <div id="screen">
+            <h3 class="head" id='head'>Guess A Number between 1 to 50</h3>
+            <input type="number" name="guess" id="guess">
+            <input type="submit" name="guess" id="sub">
+            <div class="hint" id='hint'>Start Guessing</div>
+            <div id='score'>Number of guesses:0</div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
